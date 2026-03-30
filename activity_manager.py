@@ -25,7 +25,7 @@ def read_activities_daywise(day):
     if not os.path.exists(fname):
         print("No activities recorded yet in this file.")
     else:    
-        print("Activities:")
+        print("Activities:-")
         with open(fname, "r") as file:
             for line in file.readlines():
                 print(line.strip())
