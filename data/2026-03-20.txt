@@ -1,2 +1,4 @@
 09:00 | Walking | 30 min morning walk
 10:00 | Breakfast | Morning breakfast
+11:00 | Meeting | Project meeting
+12:00 | Project Work | Project Work

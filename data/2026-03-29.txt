@@ -2,4 +2,4 @@
 10:10 | Learning | Python File Handling
 11:00 | Project Work | Python Project Work
 12:00 | Lunch | Lunch Break
-3:00 | Exercise | Cardio 30m
+15:00 | Exercise | Cardio 30m

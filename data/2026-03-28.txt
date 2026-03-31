@@ -4,3 +4,4 @@
 22:00 | Learning | Python Project
 23:00 | Exercise | 30 Minutes 
 23:50 | Project work | Python Project
+24:00 | Sleep | Day close
