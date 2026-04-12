@@ -1,5 +1,6 @@
 from activity_manager import add_activity, analyze_activities, read_activities, search_activity, update_activity
 from reports import generate_daily_report, generate_weekly_report
+from datetime import date, datetime, timedelta
 
 def menu():
     while True:
@@ -33,8 +34,17 @@ def menu():
             day=input("Enter date (YYYY-MM-DD): ")
             print(generate_daily_report(day))
         elif choice == "7":
-            dates=["2026-03-27", "activities_2026-03-27"]
-            print(generate_weekly_report(dates))
+            from_date=input("Enter start date (YYYY-MM-DD): ")
+            from_date_object = datetime.strptime(from_date, "%Y-%m-%d").date()
+            to_date=input("Enter end date (YYYY-MM-DD): ")
+            to_date_object = datetime.strptime(to_date, "%Y-%m-%d").date()
+
+            date_list = []
+            current = from_date_object
+            while current <= to_date_object:
+                date_list.append(current)
+                current += timedelta(days=1)   
+            print(generate_weekly_report(date_list))
         elif choice == "8":
             print("Goodbye!")
             break
