@@ -1,6 +1,6 @@
 from activity_manager import add_activity, analyze_activities, read_activities, search_activity, update_activity
 from reports import generate_daily_report, generate_weekly_report
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 
 def menu():
     while True:
